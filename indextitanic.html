@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Pasajeros del Titanic</title>
+  <link rel="stylesheet" href="styles/styletitanic.css">
+</head>
+<body>
+
+  <h1>Pasajeros a bordo del Titanic</h1>
+
+  <ul id="listaPasajeros"></ul>
+
+  <div class="form-section">
+    <h3>Agregar nuevos pasajeros</h3>
+    <input type="text" id="nuevo1" placeholder="Nuevo pasajero 1">
+    <input type="text" id="nuevo2" placeholder="Nuevo pasajero 2">
+    <button onclick="subenDosNuevos()">🚢 Subir nuevos</button>
+  </div>
+
+  <div class="form-section">
+    <h3>Sustituir al segundo pasajero (enfermo)</h3>
+    <input type="text" id="reemplazo" placeholder="Nuevo nombre">
+    <button onclick="sustituirSegundo()">🤒 Reemplazar</button>
+  </div>
+
+  <div>
+    <button onclick="bajaDosUltimos()">🧳 Dos se dan de baja</button>
+    <button onclick="mostrarListaFinal()">✅ Imprimir lista final</button>
+  </div>
+
+  <div class="mensajeFinal" id="mensajeFinal"></div>
+  
+</body>
+</html>
